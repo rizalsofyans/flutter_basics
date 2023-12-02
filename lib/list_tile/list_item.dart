@@ -1,12 +1,12 @@
 import 'package:faker/faker.dart';
 
 class ListItem {
-  final String sportName;
+  final String name;
   final String loremSentence;
   final String time;
 
   ListItem({
-    required this.sportName,
+    required this.name,
     required this.loremSentence,
     required this.time,
   });
@@ -15,7 +15,7 @@ class ListItem {
 List<ListItem> generateListItems() {
   return List.generate(10, (index) {
     return ListItem(
-      sportName: faker.sport.name(),
+      name: faker.person.name(),
       loremSentence: faker.lorem.sentence(),
       time: faker.date.time(),
     );

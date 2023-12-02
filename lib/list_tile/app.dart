@@ -41,7 +41,7 @@ class ListItemWidget extends StatelessWidget {
       ),
       child: ListTile(
         contentPadding: const EdgeInsets.all(8),
-        title: Text(item.sportName),
+        title: Text(item.name),
         subtitle: Text(
           item.loremSentence,
           maxLines: 2,
