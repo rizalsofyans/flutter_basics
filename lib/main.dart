@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'scroll_view/app.dart';
+import 'list_tile/app.dart';
 
 void main() {
-  runApp(App());
+  runApp(const App());
 }
